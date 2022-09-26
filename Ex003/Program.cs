@@ -1,10 +1,9 @@
 ﻿// Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 Console.Clear();
 Console.WriteLine("Сегодня выходной?");
-int N = new Random().Next(1, 8);
+int N = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"N:{N}");
-//bool holliday = false;
-if (N > 5)
+if (N == 6 || N == 7)
 {
     Console.WriteLine("Да");
 }
@@ -12,4 +11,8 @@ else
 {
     Console.WriteLine("Нет");
 }
-Console.WriteLine("End");    
+if (N < 1|| N > 7) 
+{
+    Console.WriteLine("Это не день недели");
+}
+Console.WriteLine("End");
