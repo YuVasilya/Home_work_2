@@ -1,18 +1,19 @@
 ﻿// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+Console.Clear();
 Console.WriteLine("Find third number");
 int N = Convert.ToInt32(Console.ReadLine());
 Console.Write("Загадано число = ");
 Console.WriteLine(N);
-
+int index = 2;
 string NText = Convert.ToString(N);
-if (NText.Length>2)
+if (NText.Length>index)
 {
-Console.Write("third number = ");
-Console.WriteLine(NText[2]);
+Console.Write("Find number = ");
+Console.WriteLine(NText[index]);
 }
 else
 {
-Console.WriteLine("Third numberis not found");
+Console.WriteLine("Find number is not found");
 }
 Console.WriteLine("End");
 /*if (N >= 100)
