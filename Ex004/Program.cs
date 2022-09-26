@@ -13,7 +13,7 @@ while (index < count)
     index += 1;
 }
 index = 0;
-if (index < count)
+while (index < count)
 {
     sum = sum+array[index];
     index += 1;
