@@ -1,6 +1,6 @@
 ﻿// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 Console.WriteLine("Find third number");
-int N = new Random().Next(100, 1000);
+int N = Convert.ToInt32(Console.ReadLine());
 Console.Write("Загадано число = ");
 Console.WriteLine(N);
 
